@@ -1395,6 +1395,7 @@ class StreamMessagesTest(ZulipTestCase):
             )
             Subscription.objects.create(
                 user_profile=user,
+                is_user_active=user.is_active,
                 recipient=recipient,
             )
 
